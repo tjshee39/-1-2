@@ -1,0 +1,23 @@
+mysql> CREATE DATABSE BBS;
+USE BBS;   //접속
+CREATE TABLE USER (   //회원정보 저장할 테이블
+-> userID VARCHAR(20),
+-> userPassword VARCHAR(20),
+-> userName VARCHAR(20),
+-> userGender VARCHAR(20),
+-> userEmail VARCHAR(50),
+-> PRIMARY KEY (userID)   //ID 중복되지 않게
+-> );
+
+show tables;
+desc user;   //user라는 테이블 안에 어떤 속성 있는지 확인
+INSERT INTO USER VALUES('jinhee', '990128', '한진희', '여자', 'wlsls214@naver.com');
+//하나의 데이터 입력
+select * from user;   //user 확인
+commit;
+
+desc user;
+
+Java Resources > src > package > class   //DB사용(?)
+User.java > Source > Generate Getters and Setters... > Select All (함수만들기)
+//한 명의 회원 데이터를 다룰 수 있음 java beans(?)

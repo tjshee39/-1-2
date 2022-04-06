@@ -1,0 +1,13 @@
+package bbslife;
+
+public class BbsLife {
+	
+	private int bbsLifeID;
+	private String bbsLifeTitle;
+	private String userID;
+	private String bbsLifeDate;
+	private String bbsLifeContent;
+	private int bbsLifeAvailable;
+	
+	
+	}
